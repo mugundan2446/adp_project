@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Club Registration Form</title>
+</head>
+<body style="background-image: url(https://i.pinimg.com/736x/fd/e5/75/fde5754c597aebf3fb0cedfa894b923d.jpg); background-size: cover;"></body>
+    <center>
+    <h2>Club Registration Form</h2>
+    </center>
+    <form action="/submit" method="POST">
+
+        <!-- Personal Information -->
+        <label for="full-name">Name:</label>
+        <input type="text" name="user_input" onkeydown="return /[a-zA-Z]/i.test(event.key)" autofocus autocomplete="off" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" min="2006-01-02"  autofocus required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email"  autofocus autocomplete="off" required><br><br>
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male"  autofocus required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female"  autofocus required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other"  autofocus required>
+        <label for="other">Other</label><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="quantity" name="quantity"  size="10" maxlength="10" placeholder="+91"  autofocus required><br><br>
+
+        <!-- Address Information -->
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="2" cols="30"  autofocus required></textarea><br><br>
+
+        <!-- Membership Type -->
+        <label for="membership-type">Membership Type:</label>
+        <select id="membership-type" name="membership_type"  autofocus required>
+            <option value="regular">Regular Membership</option>
+            <option value="premium">Premium Membership</option>
+            <option value="student">Student Membership</option>
+        </select><br><br>
+
+        <!-- Preferred Club Activities -->
+        <label>Preferred Club Activities (Select all that apply):</label><br>
+        <input type="checkbox" id="sports" name="activities"  autofocus value="sports">
+        <label for="sports">Sports</label><br>
+
+        <input type="checkbox" id="music" name="activities"  autofocus value="music">
+        <label for="music">Music</label><br>
+
+        <input type="checkbox" id="arts" name="activities"   autofocus value="arts">
+        <label for="arts">Arts</label><br>
+
+        <input type="checkbox" id="volunteering" name="activities"  autofocus value="volunteering">
+        <label for="volunteering">Volunteering</label><br><br>
+        <!-- Submit Button -->
+        <button type="submit">Submit Registration</button>
+        
+    </form>
+
+</body>
+</html>

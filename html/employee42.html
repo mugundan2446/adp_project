@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+</head>
+<body style="background-image: url(https://i.pinimg.com/736x/13/31/91/1331914bca2302e4a1063ee28c22a0c0.jpg); background-size: cover;">
+   <center>
+    <h2>Employee Registration Form</h2>
+    </center>
+    <form action="/submit" method="POST">
+        
+        <!-- Personal Information Section -->
+        <h3>Personal Information</h3>
+        <label for="full-name">Full Name:</label>
+        <input type="text" name="user_input" onkeydown="return /[a-zA-Z]/i.test(event.key)" autofocus autocomplete="off" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" min="2006-01-02" autofocus autocomplete="off" required><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" autofocus autocomplete="0ff" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Contact Information Section -->
+        <h3>Contact Information</h3>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" autofocus autocomplete="off" name="email"><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="quantity" name="quantity"  size="10" maxlength="10" placeholder="+91"  autofocus required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="30" autofocus required></textarea><br><br>
+
+        <!-- Job Information Section -->
+        <h3>Job Information</h3>
+        <label for="job-title">Job Title:</label>
+        <input type="text" id="job-title" autofocus autocomplete="off"  name="job_title" required><br><br>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department" autofocus autocomplete="off" required>
+            <option value="hr">Human Resources</option>
+            <option value="sales">Sales</option>
+            <option value="it">Information Technology</option>
+            <option value="marketing">Marketing</option>
+            <option value="finance">Finance</option>
+        </select><br><br>
+
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="dob" name="dob" min="2006-01-02"  autofocus required><br><br>
+
+        <!-- Emergency Contact Information -->
+        <h3>Emergency Contact Information</h3>
+        <label for="emergency-name">Emergency Contact Name:</label>
+        <input type="text" id="emergency-name" autofocus autocomplete="off" name="emergency_name" required><br><br>
+        <label for="emergency-phone">Emergency Contact Phone:</label>
+        <input type="tel" id="emergency-phone" name="emergency_phone" autofocus autocomplete="off" required><br><br>
+        <button type="submit">Submit Registration</button>
+    </form>
+
+</body>
+</html>
